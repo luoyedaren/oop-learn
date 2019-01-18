@@ -1,7 +1,6 @@
 package com.github.luoyedaren.learnoop.strategy.demo.userlogin.inter;
 
-import com.github.luoyedaren.learnoop.strategy.demo.userlogin.Account;
-import com.github.luoyedaren.learnoop.strategy.demo.userlogin.User;
+import com.github.luoyedaren.learnoop.strategy.demo.userlogin.domain.Account;
 
 /**
  * project learn-oop

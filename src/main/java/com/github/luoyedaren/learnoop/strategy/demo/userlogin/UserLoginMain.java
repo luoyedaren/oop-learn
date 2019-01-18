@@ -1,5 +1,9 @@
 package com.github.luoyedaren.learnoop.strategy.demo.userlogin;
 
+import com.github.luoyedaren.learnoop.strategy.demo.userlogin.domain.Account;
+import com.github.luoyedaren.learnoop.strategy.demo.userlogin.domain.User;
+import com.github.luoyedaren.learnoop.strategy.demo.userlogin.domain.WebAccount;
+import com.github.luoyedaren.learnoop.strategy.demo.userlogin.domain.WechatAccount;
 import com.github.luoyedaren.learnoop.strategy.demo.userlogin.inter.impl.NamePassWordLoginBehaviour;
 import com.github.luoyedaren.learnoop.strategy.demo.userlogin.inter.impl.WechatLoginBehaviour;
 

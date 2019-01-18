@@ -1,4 +1,4 @@
-package com.github.luoyedaren.learnoop.strategy.demo.userlogin;
+package com.github.luoyedaren.learnoop.strategy.demo.userlogin.domain;
 
 import com.github.luoyedaren.learnoop.strategy.demo.userlogin.inter.LoginBehaviour;
 import lombok.Data;
