@@ -1,6 +1,5 @@
 package com.github.luoyedaren.learnoop.strategy.demo.userlogin.inter.impl;
 
-import com.github.luoyedaren.learnoop.strategy.demo.userlogin.domain.Account;
 import com.github.luoyedaren.learnoop.strategy.demo.userlogin.domain.FaceAccount;
 import com.github.luoyedaren.learnoop.strategy.demo.userlogin.inter.LoginBehaviour;
 import org.springframework.stereotype.Component;
