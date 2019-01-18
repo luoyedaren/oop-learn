@@ -11,7 +11,7 @@ import java.util.Date;
  * @author chenghai on 2019/1/18 0018. - 星期五
  * nickName louyedaren
  */
-@Builder
+@Data
 public class GameInfo {
 	private NBATeam homeTeam;
 	private NBATeam guestTeam;

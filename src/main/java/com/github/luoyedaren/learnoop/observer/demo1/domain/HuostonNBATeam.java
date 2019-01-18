@@ -1,16 +1,13 @@
 package com.github.luoyedaren.learnoop.observer.demo1.domain;
 
 import com.github.luoyedaren.learnoop.observer.demo1.inter.FansObserver;
-import lombok.Builder;
 import lombok.Data;
-import net.bytebuddy.asm.Advice;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
+import java.util.stream.IntStream;
 
 /**
  * project learn-oop
@@ -22,22 +19,22 @@ import java.util.List;
 @Data
 public class HuostonNBATeam extends NBATeam {
 
-	@Autowired
-	FansObserver NBAFans;
-
-	@Autowired
-	FansObserver NBAFansTwo;
 
 	@PostConstruct
 	public void init(){
 		List<FansObserver> fansObservers = super.getFansObservers();
-		fansObservers.add(NBAFans);
-		fansObservers.add(NBAFansTwo);
+		IntStream.range(1,10).forEach(value -> {
+			fansObservers.add(new NBAFans("球迷"+value));
+
+		});
 	}
 
 	public HuostonNBATeam() {
 		super("火箭队");
 	}
 
-
+	@Override
+	public boolean isGameStart(GameInfo gameInfo) {
+		return gameInfo.getHomeTeam().equals(this);
+	}
 }

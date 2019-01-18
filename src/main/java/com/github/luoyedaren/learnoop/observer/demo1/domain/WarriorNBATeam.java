@@ -16,4 +16,8 @@ public class WarriorNBATeam extends NBATeam {
 		super("勇士队");
 	}
 
+	@Override
+	public boolean isGameStart(GameInfo gameInfo) {
+		return true;
+	}
 }

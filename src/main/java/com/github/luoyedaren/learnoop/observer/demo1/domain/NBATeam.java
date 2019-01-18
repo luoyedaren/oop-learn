@@ -15,13 +15,12 @@ import java.util.List;
 @Data
 public abstract class NBATeam {
 	final private String teamName;
-
+	private boolean start;
 	public NBATeam(String teamName) {
 		this.teamName = teamName;
 	}
 
 	private GameInfo gameInfo;
-	private boolean gameStart;
 	private List<FansObserver> fansObservers = new ArrayList<>();
 
 
@@ -33,15 +32,11 @@ public abstract class NBATeam {
 		this.fansObservers.remove(nbaFans);
 	}
 
-	public void setGameStart(boolean gameStart) {
-		this.gameStart = gameStart;
-		if (gameStart) {
-			notifyFans();
-		}
-	}
+	public abstract boolean isGameStart(GameInfo gameInfo);
+
 
 	public void notifyFans() {
-		if (gameStart) {
+		if (isGameStart(gameInfo)) {
 			for (FansObserver fansObserver : fansObservers) {
 				fansObserver.notice(gameInfo);
 			}

@@ -22,8 +22,8 @@ public class NBAMain {
 //		gameInfo.setHomeTeam(huostonNBATeam);
 //		gameInfo.setGuestTeam(WarriorNBATeam.builder().build());
 //		huostonNBATeam.setGameInfo(gameInfo);
-		System.out.println("开始比赛");
-		huostonNBATeam.setGameStart(true);
+//		System.out.println("开始比赛");
+//		huostonNBATeam.setGameStart(true);
 
 	}
 }

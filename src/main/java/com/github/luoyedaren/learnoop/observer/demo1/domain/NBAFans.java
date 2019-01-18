@@ -1,9 +1,7 @@
 package com.github.luoyedaren.learnoop.observer.demo1.domain;
 
 import com.github.luoyedaren.learnoop.observer.demo1.inter.FansObserver;
-import lombok.Builder;
 import lombok.Data;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 /**
@@ -17,6 +15,12 @@ import org.springframework.stereotype.Service;
 public class NBAFans implements FansObserver {
 	private String name = "球迷1";
 
+	public NBAFans() {
+	}
+
+	public NBAFans(String name) {
+		this.name = name;
+	}
 
 	@Override
 	public void notice(GameInfo gameInfo) {

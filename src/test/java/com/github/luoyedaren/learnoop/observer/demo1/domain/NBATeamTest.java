@@ -21,7 +21,11 @@ public class NBATeamTest extends SpringBootBaseTest {
 
 	@Test
 	public void notifyFans() {
-		GameInfo.builder().homeTeam(huostonNBATeam).guestTeam(warriorNBATeam).build();
-		huostonNBATeam.setGameStart(true);
+		GameInfo gameInfo = new GameInfo();
+		gameInfo.setHomeTeam(huostonNBATeam);
+		gameInfo.setGuestTeam(warriorNBATeam);
+		huostonNBATeam.setGameInfo(gameInfo);
+		huostonNBATeam.notifyFans();
+
 	}
 }
