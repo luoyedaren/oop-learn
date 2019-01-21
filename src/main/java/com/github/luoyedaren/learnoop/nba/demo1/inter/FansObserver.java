@@ -1,6 +1,6 @@
-package com.github.luoyedaren.learnoop.observer.demo1.inter;
+package com.github.luoyedaren.learnoop.nba.demo1.inter;
 
-import com.github.luoyedaren.learnoop.observer.demo1.domain.GameInfo;
+import com.github.luoyedaren.learnoop.nba.demo1.domain.GameInfo;
 
 /**
  * project learn-oop

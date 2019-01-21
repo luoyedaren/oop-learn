@@ -1,6 +1,6 @@
-package com.github.luoyedaren.learnoop.observer.demo1;
+package com.github.luoyedaren.learnoop.nba.demo1;
 
-import com.github.luoyedaren.learnoop.observer.demo1.domain.*;
+import com.github.luoyedaren.learnoop.nba.demo1.domain.*;
 
 /**
  * project learn-oop

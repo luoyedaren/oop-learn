@@ -1,4 +1,4 @@
-package com.github.luoyedaren.learnoop.observer.demo1.domain;
+package com.github.luoyedaren.learnoop.nba.demo1.domain;
 
 import com.github.luoyedaren.SpringBootBaseTest;
 import org.junit.Test;

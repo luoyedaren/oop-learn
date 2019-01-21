@@ -1,8 +1,7 @@
-package com.github.luoyedaren.learnoop.observer.demo1.domain;
+package com.github.luoyedaren.learnoop.nba.demo1.domain;
 
-import com.github.luoyedaren.learnoop.observer.demo1.inter.FansObserver;
+import com.github.luoyedaren.learnoop.nba.demo1.inter.FansObserver;
 import lombok.Data;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;

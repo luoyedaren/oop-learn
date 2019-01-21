@@ -1,4 +1,4 @@
-package com.github.luoyedaren.learnoop.observer.demo1.domain;
+package com.github.luoyedaren.learnoop.nba.demo1.domain;
 
 import lombok.Builder;
 import org.springframework.stereotype.Service;
