@@ -20,10 +20,8 @@ import static org.hamcrest.Matchers.notNullValue;
  * @author chenghai on 2019/1/21 0021. - 星期一
  * nickName louyedaren
  */
-@RunWith(SpringRunner.class)
-@DataJpaTest
-@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
-public class UserRepositoryTest {
+
+public class UserRepositoryTest extends DaoTest{
 	@Autowired
 	private UserRepository userRepository;
 
