@@ -1,10 +1,8 @@
 package com.github.luoyedaren.learnoop.observer.demo1.domain;
 
-import com.github.luoyedaren.learnoop.SpringBootBaseTest;
+import com.github.luoyedaren.SpringBootBaseTest;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import static org.junit.Assert.*;
 
 /**
  * project learn-oop

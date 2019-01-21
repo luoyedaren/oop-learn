@@ -1,12 +1,15 @@
-package com.github.luoyedaren.learnoop;
+package com.github.luoyedaren;
 
+import com.github.luoyedaren.LearnOopApplication;
+import org.hamcrest.CoreMatchers;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(classes = LearnOopApplication.class)
 public class SpringBootBaseTest {
 
 	@Test

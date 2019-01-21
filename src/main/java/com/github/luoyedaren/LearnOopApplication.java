@@ -1,4 +1,4 @@
-package com.github.luoyedaren.learnoop;
+package com.github.luoyedaren;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

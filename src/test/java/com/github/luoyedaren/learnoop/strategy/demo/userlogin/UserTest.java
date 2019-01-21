@@ -1,12 +1,11 @@
 package com.github.luoyedaren.learnoop.strategy.demo.userlogin;
 
-import com.github.luoyedaren.learnoop.SpringBootBaseTest;
+import com.github.luoyedaren.SpringBootBaseTest;
 import com.github.luoyedaren.learnoop.strategy.demo.userlogin.domain.FaceAccount;
 import com.github.luoyedaren.learnoop.strategy.demo.userlogin.domain.User;
 import com.github.luoyedaren.learnoop.strategy.demo.userlogin.domain.WechatAccount;
 import com.github.luoyedaren.learnoop.strategy.demo.userlogin.inter.impl.FaceLoginBehaviour;
 import com.github.luoyedaren.learnoop.strategy.demo.userlogin.inter.impl.WechatLoginBehaviour;
-import org.junit.Before;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
