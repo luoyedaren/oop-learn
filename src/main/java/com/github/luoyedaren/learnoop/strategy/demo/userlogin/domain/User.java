@@ -1,5 +1,7 @@
 package com.github.luoyedaren.learnoop.strategy.demo.userlogin.domain;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.github.luoyedaren.learnoop.strategy.demo.userlogin.inter.LoginBehaviour;
 import lombok.Data;
 
