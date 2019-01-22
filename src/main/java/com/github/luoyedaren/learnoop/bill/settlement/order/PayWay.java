@@ -1,4 +1,4 @@
-package com.github.luoyedaren.learnoop.bill.settlement;
+package com.github.luoyedaren.learnoop.bill.settlement.order;
 
 import java.math.BigDecimal;
 

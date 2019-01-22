@@ -1,4 +1,4 @@
-package com.github.luoyedaren.learnoop.bill.settlement;
+package com.github.luoyedaren.learnoop.bill.settlement.order;
 
 import lombok.Data;
 
@@ -27,10 +27,10 @@ public class Order{
 	private int channel;
 
 	public BigDecimal caculateAll() {
-		if (getPayType() == 1) {
+		if (getChannel() == 1) {
 			return caculate();
 
-		} else if (this.getPayType() == 2) {
+		} else if (getChannel() == 2) {
 			return caculate();
 
 		} else {
@@ -42,12 +42,12 @@ public class Order{
 
 	public BigDecimal caculate() {
 		if (getCaculateType() == 1) {
-			return caculateByChannel(getChannel());
+			return caculateByPayType(getPayType());
 		} else if (getCaculateType() == 2) {
-			return caculateByChannel(getChannel());
+			return caculateByPayType(getPayType());
 
 		} else if (getCaculateType() == 3) {
-			return caculateByChannel(getChannel());
+			return caculateByPayType(getPayType());
 
 		} else {
 			System.out.println("未知的结算方式");
@@ -55,7 +55,7 @@ public class Order{
 		}
 	}
 
-	private BigDecimal caculateByChannel(int channel) {
+	private BigDecimal caculateByPayType(int channel) {
 		System.out.println("渠道: " + channel);
 		return BigDecimal.ONE;
 	}

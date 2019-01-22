@@ -1,12 +1,9 @@
 package com.github.luoyedaren.learnoop.bill.settlement;
 
-import org.junit.Assert;
+import com.github.luoyedaren.learnoop.bill.settlement.order.Order;
 import org.junit.Test;
 
-import java.math.BigDecimal;
-
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.*;
 
 /**
  * project learn-oop

@@ -1,4 +1,6 @@
-package com.github.luoyedaren.learnoop.bill.settlement;
+package com.github.luoyedaren.learnoop.bill.settlement.order;
+
+import com.github.luoyedaren.learnoop.bill.settlement.order.PayWay;
 
 import java.math.BigDecimal;
 
@@ -9,8 +11,10 @@ import java.math.BigDecimal;
  * nickName louyedaren
  */
 public class OnlinePayWay implements PayWay {
+	Order order;
 	@Override
 	public BigDecimal caculate() {
+
 		return null;
 	}
 }
