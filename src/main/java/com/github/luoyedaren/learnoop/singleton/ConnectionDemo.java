@@ -8,7 +8,7 @@ package com.github.luoyedaren.learnoop.singleton;
  * 饿汉法
  */
 public class ConnectionDemo {
-	private final ConnectionDemo connectionDemo = new ConnectionDemo();
+	private static final ConnectionDemo connectionDemo = new ConnectionDemo();
 
 
 	private ConnectionDemo() {

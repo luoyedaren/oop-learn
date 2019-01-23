@@ -9,7 +9,7 @@ package com.github.luoyedaren.learnoop.singleton;
  * 单线程
  */
 public class ConnectionDemo2 {
-	private static final ConnectionDemo2 connectionDemo = null;
+	private static ConnectionDemo2 connectionDemo = null;
 
 
 	private ConnectionDemo2() {
