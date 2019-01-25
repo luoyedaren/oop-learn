@@ -16,5 +16,10 @@ public class SpringBootBaseTest {
 	public void contextLoads() {
 	}
 
+	@Test
+	public void classpath() {
+		String path = Test.class.getResource("/").toString();
+		System.out.println("path = " + path);
+	}
 }
 
